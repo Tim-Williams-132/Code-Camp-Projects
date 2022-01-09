@@ -1,0 +1,8 @@
+function diffArray(arr1, arr2) {
+  //combine both lists to make a master list to check against
+  let comparray = arr1.concat(arr2)
+  //sort just for fun
+  comparray.sort()
+  //if an item in the master list shows up in only one of the two arrays, it is added to the final list, which is returned. 
+  return comparray.filter(item => arr1.includes(item) ^ arr2.includes(item));
+}
