@@ -1,0 +1,15 @@
+function destroyer(arr, ...targets) {
+  //use rest parameter to bring in as many arguments as needed
+  //loop through targets to be removed.
+  for (let x of targets) {
+    //loop through the provided array
+    for (let i=0; i< arr.length; i++){
+      // if the target shows up, remove it with slice, and de-increment the counter. 
+      if (arr[i] == x){
+        arr.splice(i,1)
+        i--
+      }
+    }
+  }
+  return arr;
+}
