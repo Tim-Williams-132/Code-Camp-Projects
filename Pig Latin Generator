@@ -1,0 +1,14 @@
+function translatePigLatin(str) {
+  //check if the word starts with a vowel
+  if (/^[aeiou]/.test(str)){
+    //if so, add way to the end and return the result
+    return str.concat("way")
+  } else {
+    let firstconsts = str.match(/^[^aeiou]+/)
+    //if not, grab a string of the leading consonants 
+    if (firstconsts !== null){
+      //if the string isnt all consonants, remove the first consonants, add to the end, add ay, return the result 
+      return str.replace(firstconsts,"").concat(firstconsts, "ay")
+    }
+  }
+}
