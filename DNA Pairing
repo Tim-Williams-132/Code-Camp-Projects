@@ -1,0 +1,13 @@
+function pairElement(str) {
+  let base = str.split(""); //split the input string into its separate bases
+  let paired = []; //set up results array
+  for (let item of base){ //iterate through the bases
+    let temparr = [item];
+    item === "G" ? temparr.push("C") : //figure out which base pair it needs and push it once found
+    item === "C" ? temparr.push("G") :
+    item === "A" ? temparr.push("T") :
+    item === "T" ? temparr.push("A") : console.log("ya goofed")
+    paired.push(temparr); //push the temp array once the pair is found
+  }
+  return paired;
+}
