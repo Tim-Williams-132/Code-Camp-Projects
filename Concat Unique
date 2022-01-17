@@ -1,0 +1,8 @@
+function uniteUnique(...arr) {
+  let combinedUnique = [] //set up combined array
+  for (let items of arr){
+    combinedUnique = combinedUnique.concat(items) //combine all items into one array
+  }
+  combinedUnique = [...new Set(combinedUnique)] //reduce to a unique array
+  return combinedUnique; //return the unique array
+}
