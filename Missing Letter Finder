@@ -1,0 +1,15 @@
+function fearNotLetter(str) {
+  let masterList = "abcdefghijklmnopqrstuvwxyz".split(""); //define alphabet
+  let test = str.split(""); //split up test string into an array
+  let start = masterList.findIndex(letter => letter === test[0]); //find where the test string starts amongst the master array
+  let j = 0; //set index
+  let missing = undefined; //set initial condition
+  for (let i = start; i < (test.length + start); i++){ //roll through master array starting at the start index
+    if (masterList[i] != test[j]){ //if the master letter and test letter dont match, record the missing letter and break the loop
+      missing = masterList[i];
+      break
+    }
+    j++;
+  }
+  return missing; //return the missing letter
+}
