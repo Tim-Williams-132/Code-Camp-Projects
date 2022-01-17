@@ -1,0 +1,8 @@
+function sumOddFibs(num) {
+  let fib = [1,1]; //start of fibonacci sequece
+  while (fib[fib.length - 1] < num){ //builds fibonacci sequence up to the provided number
+    fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
+  }
+  fib[fib.length - 1] > num ? fib.pop(-1) : ''; //remove the last item in the fib array if it is larger than the provided number
+  return fib.filter(number => number % 2).reduce((a,b) => a+b); //remove all odd numbers from the array and then comput the sum
+}
