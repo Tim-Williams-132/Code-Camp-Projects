@@ -1,0 +1,12 @@
+function palindrome(str) {
+  let clnStr = str.replace(/[^0-9a-z]/gi, '').toLowerCase() //clean the string of all non alphanumeric characters, and changes to lower case
+  let lengthToMid = clnStr.length / 2  //find the mid point of the string
+  let i = 0 //set up counter
+  while (i < lengthToMid){
+    if (clnStr[i] !== clnStr[clnStr.length - 1 -i]){ //loops through the string and checks the corresponding matching characters at the start and end of the string
+      return false //if any dont match, return false
+    } 
+    i++
+  }
+  return true; //if all match, return true
+}
