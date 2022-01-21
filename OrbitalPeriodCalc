@@ -1,0 +1,13 @@
+function orbitalPeriod(arr) {
+  const GM = 398600.4418; //standard gravitational parameter
+  const earthRadius = 6367.4447; 
+  let output = []; //set up output array
+  for (let item of arr){ //loop through input
+    let temp = { //create new object with proper output format
+      name: item.name, 
+      orbitalPeriod: Math.round(2* Math.PI* (Math.sqrt(((item.avgAlt+earthRadius)**3) / GM)))
+    };
+    output.push(temp) //push temp object contents to the output array
+  }
+  return output;
+}
