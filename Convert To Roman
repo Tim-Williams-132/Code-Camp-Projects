@@ -1,0 +1,12 @@
+function convertToRoman(num) {
+  let numb = num //create new variable as to not change the value of "num"
+  let lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1} //set up object with all roman numeral possibilites
+  let output = '' //create output seed
+  for (let i in lookup){ //loop through all keys in the lookup object
+    while (numb >= lookup[i]){ //while the number is less than the current keys value, keep looping
+      output += i //add the current key to the output string
+      numb -= lookup[i] //subrtract the current keys value from the number
+    }
+  }
+  return output;
+}
