@@ -1,0 +1,53 @@
+function checkCashRegister(price, cash, cid) {
+  const UNIT_VALUE = {    //set up object with monetary values for reference
+  "PENNY": .01,
+  "NICKEL": .05,
+  "DIME": .10,
+  "QUARTER": .25,
+  "ONE": 1.00,
+  "FIVE": 5.00,
+  "TEN": 10.00,
+  "TWENTY": 20.00,
+  "ONE HUNDRED": 100.00
+  }
+  
+  cid = cid.reverse()   //reverse the cash in drawer array for logical doling of change
+  let output = {status: "OPEN", change: [] }    //set initial value of the output
+  let crq = (cash - price).toFixed(2);    //calculate the change required
+
+  let totalCID = 0;   //initiate a cash in drawer value
+  for (let item of cid) { 
+    totalCID += item[1]     //add up the cash in the drawer
+  }
+  totalCID = totalCID.toFixed(2);   //truncate to two decimal places
+
+  if (parseFloat(crq) > parseFloat(totalCID)){    //check if the total cash in drawer is more than change required. need to parse values into floats, because otherwise it fails
+    output.status = "INSUFFICIENT_FUNDS"
+    return output   //if there is not enough cash in drawer, return insufficient funds
+    
+  } else if (crq === totalCID){     //if the change required is same as cash in drawer, return closed
+    output.status = "CLOSED"
+    output.change = cid.reverse()
+    return output
+    
+  } else {
+    for (let item of cid){    //loop through each item in the cid array
+      let denomination = [item[0], 0]   //det up the temp denomination array, with denom name and corresponding sum of value, which starts at 0
+      while (crq >= UNIT_VALUE[item[0]] && item[1] > 0){  //while the value of required change is greater than the current denomination and there is still the current denomination in the drawer
+        denomination[1] += UNIT_VALUE[item[0]]    //add value of denom to the temp array
+        crq -= UNIT_VALUE[item[0]]    //subtract the value of the added denomination from change required
+        item[1] -= UNIT_VALUE[item[0]]    //subtract the value of the added deonomination from the cash drawer
+        crq = crq.toFixed(2)    //make sure that change required is still truncated
+      }
+      
+      if (denomination[1] > 0){ //if we took some money from the drawer, push the temp array to the change array in the output
+        output.change.push(denomination)
+      }
+    }
+    
+    if (crq > 0){   //if there is still change required, return insufficient funds
+      return {status: "INSUFFICIENT_FUNDS", change: []}
+    }
+  }
+  return output;
+}
