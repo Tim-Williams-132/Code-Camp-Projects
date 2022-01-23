@@ -1,0 +1,13 @@
+function rotX(str, shift) {
+  const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']; //set up alphabet reference array
+  let rotstring = str.toUpperCase() //assign upper case to new variable to keep input unchanged
+  let decoded = ''; //set up decoded string 
+  for (let i = 0; i <rotstring.length; i++){ //loop through the string
+    if(/[A-Z]/g.test(rotstring[i])){ //if the character is alphanumeric, proceed to rotation
+      decoded += alphabet[(alphabet.indexOf(rotstring[i]) + shift) %26] //rotate by desired amount, add to decoded string
+    }else{
+      decoded += rotstring[i] //if non-alphanumeric, add to decoded string as is
+    }
+  }
+  return decoded;
+}
