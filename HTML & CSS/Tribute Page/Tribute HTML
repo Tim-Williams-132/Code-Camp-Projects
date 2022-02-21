@@ -1,0 +1,30 @@
+<body id="main">
+    <div id="title">
+      <h1 class= "heading">Lake Powell Might Not Be a Lake For Much Longer</h1>
+      <p class= "heading">Plummeting water levels might put the lake out of commission </p>
+      <figure id="img-div">
+        <img id="image" src="https://miro.medium.com/max/700/1*xwIWBFWrE0dfWhcw1wW6Pg.jpeg" alt="house boat trolling across lake powell during a cloudy day"> 
+        <figcaption id="img-caption" class= "heading"> 
+          A house boad trolling across Lake Powell During a Normal Day in 2019. 
+        </figcaption>
+      </figure>
+    </div>
+    <div2>  
+      <p2 id="tribute-info" class= "story">
+         <br>The first time I visited Lake Powell was in 2019, just after graduating from college. I journeyed out West with 12 friends to rent a houseboat on the deep blue waters of Glen Canyon. Even in 2019, we were told that the level of the lake was substantially lower than normal.<br><br>
+        The water level was so low that maps of the area were no longer accurate. Receding waters had turned would-be islands into peninsulas jutting out of the abyss. Once sandy beaches were now 50 feet from the waterfront, and side canyons were in danger of bottoming out our boat. All of this said, we still had an unforgettable time on the water.<br><br>
+        Lake Powell is the second-largest artificial reservoir by total water capacity in the United States. It was originally created by flooding Glen Canyon with the construction of the Glen Canyon Dam. The lake and the surrounding area is a popular vacation spot with over two million visitors per year.<br><br>
+        Those certainly aren’t rookie numbers, considering most national parks don't even reach such popularity. Visitors to the lake enjoy house boating, fishing, hiking, rafting, camping, and much more. The main attractor for most is the lake itself.<br><br> 
+      <img id="image" src="https://miro.medium.com/max/700/1*ialqiqvbJa71PAt2DtCoUA.jpeg" alt="A view over Lake Powell from a local Butte"> 
+        <br>Even though the water level was low when I visited, I found Lake Powell and the rest of Glen Canyon to be a magical place. There is something surreal about seeing deep blue waters framed by stark red and white sandstone. This might be because I grew up in the midwest, but it was like nothing I had seen before.<br><br>
+While on the lake, there’s a special feeling that comes with being the master of your own destiny. When it came to exploring, we were only limited by the amount of gas in the tank and the time left in the day. Given all of the side canyons and natural structures to explore, it was sometimes hard to choose where to go next.<br><br>
+        These days, I want nothing more than to be able to go back and recreate this experience, but with the way things are looking for Lake Powell, that might not be possible.<br><br>
+     <img id="image" src="https://miro.medium.com/max/700/0*9Eh4K2wsl085ufRh.jpg" alt="Satelite images of Lake Powell from 1999 to 2021"> 
+        <br>If you look at pictures of Lake Powell over the years, you can plainly see that it’s turning back into its former self, a river. There are still some deep pools, but with recent record lows, much of it has receded. You might think this is a bad thing, but maybe it's not after all.<br><br>
+        Some people argue that we shouldn’t have dammed Glen Canyon in the first place. The construction of the dam and flooding of Glen Canyon was controversial from the start. In the early 1950s, the dam was originally proposed to be in Echo Park in what is now Dinosaur National Monument. A prominent environmentalist named David Brower strongly opposed this location. He argued successfully that Echo Park's natural and scenic qualities were too valuable to be underwater.<br><br>
+When the government proposed Glen Canyon instead, Brower agreed, though he had never visited the place himself. He later came to deeply regret this decision after a river trip to Glen Canyon prior to dam construction. He discovered that “It had the kind of scenic, cultural, and wilderness qualities often associated with America's National Parks.”<br><br>
+        As previously mentioned, Glen Canyon has over 80 side canyons with colorful sandstone. There’s abundant wildlife, arches, natural bridges, and native American archeological sites. Most of these beautiful features have been covered by hundreds of feet of water for the last 60 years. So is it truly sad that the reservoir is draining? Or is now the perfect time to go and see what beauty has been submerged for 60 years? I’d argue for the latter, and I plan on taking advantage of the moment.<br><br><br>
+        If you are interested, go here for <a href="https://en.wikipedia.org/wiki/Lake_Powell" id="tribute-link" target="_blank"> more information about Lake Powell</a>. Please note that all information in the above text was taken from an article on Medium, written by myself, the author of this page. You can visit my medium page here: <a href="https://medium.com/the-orange-journal/lake-powell-might-not-be-a-lake-for-much-longer-5ef36ae6795e" target="_blank"> Theo Wells </a><br><br>
+      </p2>
+    </div2>
+</body>
