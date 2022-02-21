@@ -1,0 +1,30 @@
+body{
+  background: #E1F0C4;
+  color: black;
+  font-family: Calibri;
+  padding: 3%
+}
+.heading{
+  text-align: center;
+  color: white;
+}
+
+div{
+  background: #6BAB90;
+  padding: 2%
+}
+.story{
+  text-align: justify;
+}
+
+img{
+  display: block;
+  height: auto;
+  max-width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:hover{
+  color: red;
+}
