@@ -1,0 +1,58 @@
+body{
+  background-color: #329da8;
+  background-size: cover; 
+  font-family: calibri;
+  color: white;
+  position: relative;
+}
+.label{
+  text-align: left;
+  width: 90%;
+  font-weight: bold;
+}
+
+form{
+  margin: 0% 0% 0% 5%;
+  text-align: left;
+}
+
+input{
+  border-radius: 1%;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0% 0% 15px 0%;
+}
+select{
+  border-radius: 1%;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0% 0% 20px 0%;
+}
+.heading{
+  text-align: center;
+}
+.container {
+  width: 100%;
+  display: grid;
+}
+.input-container{
+  width: 95%;
+  display: grid;
+}
+.input-radio,
+.input-checkbox {
+  min-height: 1rem;
+  min-width: 1rem;
+  margin: 0% 0% 5px 0%;
+  width: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.radcheck-labels{
+  margin: 10px;
+}
+textarea{
+  min-height: 150px;
+  width: 90%;
+  padding: 10px 10px 0px 10px;
+}
