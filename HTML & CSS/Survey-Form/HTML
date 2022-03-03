@@ -1,0 +1,59 @@
+<body class="demo-wrap">
+  <div class="container">
+    <h1 id="title" class="heading"> The Most Basic Survey Form </h1>
+    <p id="description" class="heading"> There is so much fancy work that I am still working to figure out with CSS & HTML</p>
+  </div>
+  <form id="survey-form" class="input-container" action="https://www.youtube.com/watch?v=HQ5H0jvGugg">
+    <div>
+      <label class="label" id="name-label">What is your name?</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label class="label" id="email-label">What is your email?</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+      <label class="label" id="number-label">Favorite Number (Optional)</label>
+      <input type="number" id="number" placeholder="Enter your favorite number" min="0" max="1000">
+    </div>
+    <div>
+      <label class="label" id="number-label">Which option best describes youre current mood?</label>
+      <select id="dropdown" required>
+        <option disabled selected value> Select current mood </option>
+        <option value="could be better"> Could be better </option>
+        <option value="rapscaleous"> A tad bit rapscaleous </option>
+        <option value="suprisingly germaine"> Surprisingly germaine </option>
+        <option value="pit pat"> On the old pitter patter </option>
+        <option value="beaned up"> Absolutely full of beans </option>
+        <option value="knackered"> Knackered </option>
+      </select>
+    </div>
+    <div>
+      <label class="label" id="number-label">Preferred Tea Time to Honor the Queen?</label><br>
+      <input class="input-radio" name="tea time" value="1" type="radio"><label class="radcheck-labels">Morning</label><br>
+      <input class="input-radio" name="tea time" value="2" type="radio"><label class="radcheck-labels">Afternoon</label><br>
+      <input class="input-radio" name="tea time" value="3" type="radio"><label class="radcheck-labels">Evening</label><br>
+      <input class="input-radio" name="tea time" value="4" type="radio"><label class="radcheck-labels">All of The Above (For the Queen)</label>
+    </div>
+    <br>
+    <div>
+      <label class="label" id="number-label">Select your favorite European Countries From This List</label><br>
+      <input class="input-checkbox" name="england" value="1" type="checkbox"><label class="radcheck-labels">England</label><br>
+      <input class="input-checkbox" name="ireland" value="2" type="checkbox"><label class="radcheck-labels">Unified Ireland</label><br>
+      <input class="input-checkbox" name="italy" value="3" type="checkbox"><label class="radcheck-labels">Italy</label><br>
+      <input class="input-checkbox" name="germany" value="4" type="checkbox"><label class="radcheck-labels">Germany</label><br>
+      <input class="input-checkbox" name="france" value="5" type="checkbox"><label class="radcheck-labels">France</label><br>
+      <input class="input-checkbox" name="ukraine" value="6" type="checkbox"><label class="radcheck-labels">Ukraine</label><br>
+      <input class="input-checkbox" name="Sweden" value="7" type="checkbox"><label class="radcheck-labels">Sweden</label><br>
+    </div>
+    <br>
+    <div>
+      <label class="label" id="number-label">Please provide any historical inquiries below:</label><br>
+      <textarea id="inquiries" name="open-ended" placeholder="'Please tell me about the following historic event.....'"></textarea>
+    </div>
+    <br>
+    <div>
+      <button type="submit" id="submit">Transmit Your Inquiry</button>
+    </div>
+  </form>
+</body>
