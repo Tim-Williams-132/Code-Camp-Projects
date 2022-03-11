@@ -1,0 +1,56 @@
+<body>
+  <header id="header">
+    <img src="https://cdn-images-1.medium.com/max/720/1*3ecAYS3RCqdAeRsZv6PhWA.png" alt="just guys being dudes. there are some cows in the corner as well" height="65px" id="header-img">
+    <nav id="nav-bar">
+      <button class="nav-link" href="#features"><a href="#features">Features</a></button>
+      <button class="nav-link" href="#video"><a href="#video">Demonstration</a></button>
+      <button class="nav-link" href="#pricing"><a href="#pricing">Pricing</a></button>
+    </nav>
+  </header>
+  <form class="form" id="form" action="https://www.freecodecamp.com/email-submit">
+    <h1>The Tubro Brella® </h1>
+    <h4>A product from Bachelor Brothers Inc.</h4>
+    <input type="email" placeholder="Enter Your Email Address" class="form-input" id="email" name="email"></input><br>
+    <input type="submit" value="Sign up product releases" id=submit></input>
+  </form>
+  <br id="features"><br><br>
+  <div id="features" class="curved">
+    <features>
+      <h2 class="features">Premium materials</h2>
+      <p class="features">The Turbo Brella erector shaft is made out of expertly crafted 100% not titanium alloy to provide enough strength to withstand high winds and even hammer attacks. The high performance rain deflector is made of all natural, organic, non-gmo, gluten-free, phthalat-free, silicone-free, sulfate-free, battle tested, kevlar. The rain deflector is not water repelant, but it looks pretty dang cool.</p><br>
+      
+      <h2 class="features">Excellent performance</h2>
+      <p class="features">The Tubro Brella performs 99% as we have intended. If you dont like how it performs, consider telling your past self to not buy the Turbo Brella. There are no returns. </p><br>
+      
+      <h2 class="features">Versatility</h2>
+      <p class="features">The Turbo Brella can be used outside, and even in monsoons. Check it out!</p><br>
+    </features>
+  </div>
+  <div style="text-align:center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CIQoZWybptM" title="YouTube video player" frameborder="0" id="video"></iframe>
+  </div>
+  <br>
+  <div class="container" id="pricing">
+    <div id="box-1">
+      <h2>Low-Tier</h2>
+      <h3>$49.99</h3>
+      <p>This will break on you within one week of use, I can guarantee it</p>
+      <button>Select</button>
+    </div>
+    <div id="box-2">
+      <h2>Mid-Tier</h2>
+      <h3>$99.99</h3>
+      <p>Higher quality construction, and a few more features, but still a basic waste of money</p>
+      <button>Select</button>
+    </div>
+    <div id="box-3">
+      <h2>High-Tier</h2>
+      <h3>$199.99</h3>
+      <p>Top notch, primo, cream of the crop. This is the best you can get. You will say "wow"</p>
+      <button>Select</button>
+    </div>
+  </div>
+  <div style="text-align:center;">
+    All rights reserved by me, the creator of the Turbo Brella.
+  </div>
+</body>
