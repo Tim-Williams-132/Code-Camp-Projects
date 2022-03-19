@@ -1,0 +1,121 @@
+:root{
+  --main-blue: #5386E4;
+  --main-grey: #36393B;
+  --main-yellow: #EEC170;
+  --main-green: #57CC99;
+  --main-lgreen: #80ED99;
+}
+
+body{
+  width: 100%;
+  font-family: helvetica;
+  min-width: 350px;
+}
+
+#welcome-section p{
+  font-style: italic;
+  font-size: 1.5em;
+  color: var(--main-yellow)
+}
+#welcome-section{
+  height: 100vh;
+  background-color: var(--main-grey);
+  color: white;
+  top-margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section h1{
+  font-size: 2rem;
+}
+img{
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+#projects p:hover{
+  color: var(--main-lgreen);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#projects div{
+  background-color: var(--main-grey);
+  width: 35vh; 
+  border: 5px var(main-orange);
+}
+#contact{
+  background-color: var(--main-grey);
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact a{
+  padding: 0px 10px 0px 10px;
+}
+#projects{
+  background-color: var(--main-blue);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+#navbar{
+  background-color: var(--main-green);
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+.nav-list{
+  display: flex;
+  margin-right: 10px;
+}
+li{
+  margin: 0px 0px 0px 0px;
+  list-style: none;
+  font-weight: 700;
+}
+.nav-list a{
+  padding: 17px;
+}
+.nav-list a:hover {
+  background: var(--main-yellow);
+}
+.project-tile{
+  align-content: center;
+  align-text: center;
+}
+#projects-section{
+  background-color: var(--main-blue);
+  text-align: center;
+  color: white;
+  padding: 25px;
+  align-conent: space-between;
+}
+#welcome-section h1{
+  font-size: 2.75em;
+}
+h2{
+  font-size: 2em;
+}
+#contact h1{
+  font-size: 2em;
+}
+@media (max-width: 400px){
+  #navbar{
+    justify-content: center;
+  }
+}
